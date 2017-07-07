@@ -8,14 +8,14 @@ angular.module('LunchCheck', [])
 LunchCheckController.$inject =['$scope'];
 
 function LunchCheckController ($scope) {
-$scope.list='';
+$scope.items='';
 $scope.msg='';
 $scope.fontStyle = {};
 $scope.boxStyle = {};
 
 $scope.displayMsg = function () {
-  if($scope.list !== '') {
-  var arrayOfStrings = $scope.list.split(',');
+  if($scope.items !== '') {
+  var arrayOfStrings = $scope.items.split(',');
   var count=0;
   for(var i =0; i<arrayOfStrings.length; i++){
 					if(arrayOfStrings[i].trim() !=='')
@@ -37,15 +37,15 @@ $scope.displayMsg = function () {
             					};
           }
   else {
-    enterItems();
+    enterDishes();
   }
 }
 			else {
-				enterItems();
+				enterDishes();
 			}
 }
 
-var enterItems = function() {
+var enterDishes = function() {
 			$scope.msg = 'Please enter data first';
 				$scope.fontStyle = {
 					"color":"red"
