@@ -1,0 +1,81 @@
+body{
+  background-color: #F5F3EE;
+}
+.glyphicon-cutlery{
+  color: #FFA500;
+  border: none;
+  margin: 10px;
+  background-color: wheat;
+}
+.glyphicon-info-sign{
+  color: #1E90FF;
+  margin: 10px;
+}
+h1{
+  color: #B71427;
+  text-align:center;
+}
+a{
+  color: #1B7B34;
+  font-weight: bold;
+}
+a:hover,a:active{
+  color: #eab126;
+}
+.home{
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.categories a{
+  font-weight: bold;
+}
+.categories p{
+  text-align: justify;
+  font-style: italic;
+}
+.categories h5{
+  color: #1B7B34;
+}
+.categories span{
+  text-transform: capitalize;
+}
+.description{
+  font-weight: bold;
+
+}
+.categories strong{
+  color: #0000FF;
+}
+.categories{
+  background: #fff;
+}
+
+text {
+  font-family: Filmotype Major;
+  font-size: 30px;
+  fill: #FFFFFF;
+  stroke: none;
+  stroke-width: 2px;
+}
+.windows rect {
+  fill: #A2AB58;
+}
+.windows line {
+  stroke: #B71427;
+  stroke-width: 4px;
+}
+path {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2px;
+}
+@media (max-width: 728px){
+  h1{
+    font-size: 5vw;
+  }
+}
